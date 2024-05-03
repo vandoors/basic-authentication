@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import Public from "./Public";
 import Protected from "./Protected";
 import Profile from "./Profile";
+import About from "./About";
 
 const AppRouter = () => {
    const [current, setCurrent] = useState("home");
@@ -28,6 +29,7 @@ const AppRouter = () => {
             <Route exact path="/" element={<Public />} />
             <Route exact path="/protected" element={<Protected />} />
             <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/about" element={<About />} />
             <Route element={<Public />} />
          </Routes>
       </Router>

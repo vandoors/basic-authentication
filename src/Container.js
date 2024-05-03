@@ -1,7 +1,7 @@
 import React from "react";
 
 const Container = ({ children }) => {
-   <div style={styles.container}>{children}</div>;
+   return <div style={styles.container}>{children}</div>;
 };
 
 const styles = {
@@ -10,3 +10,5 @@ const styles = {
       padding: "50px 100px",
    },
 };
+
+export default Container;

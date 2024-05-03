@@ -5,6 +5,7 @@ import {
    HomeOutlined,
    ProfileOutlined,
    FileProtectOutlined,
+   InfoCircleOutlined,
 } from "@ant-design/icons";
 
 const Nav = (props) => {
@@ -29,6 +30,12 @@ const Nav = (props) => {
                <Link to={`/protected`}>
                   <FileProtectOutlined />
                   Protected
+               </Link>
+            </Menu.Item>
+            <Menu.Item key="about">
+               <Link to={`/about`}>
+                  <InfoCircleOutlined />
+                  About
                </Link>
             </Menu.Item>
          </Menu>
