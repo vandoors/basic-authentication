@@ -9,6 +9,7 @@ const Profile = () => {
       checkUser();
    }, []);
 
+   // eslint-disable-next-line
    const [user, setUser] = useState({});
 
    const checkUser = async () => {
