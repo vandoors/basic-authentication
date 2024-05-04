@@ -9,7 +9,7 @@ const Protected = (props) => {
       getCurrentUser().catch(() => {
          navigate("/profile");
       });
-   }, []);
+   }, [navigate]);
    return (
       <Container>
          <h1>Protected Route</h1>
